@@ -1,5 +1,5 @@
 import { LitElement, html } from "lit";
-import { litSwitchDosStyles } from "./lit-switch-dos-styles.js";
+import { LitSwitchDosStyles } from "./lit-switch-dos-styles.js";
 
 export class LitSwitchDos extends LitElement {
   static properties = {
@@ -7,7 +7,7 @@ export class LitSwitchDos extends LitElement {
     checked: { type: Boolean, reflect: true },
   };
 
-  static styles = litSwitchDosStyles;
+  static styles = LitSwitchDosStyles;
 
   constructor() {
     super();
@@ -43,3 +43,5 @@ export class LitSwitchDos extends LitElement {
     `;
   }
 }
+
+customElements.define("lit-switch-dos", LitSwitchDos);

@@ -6,16 +6,16 @@
 
 import { assert, fixture } from '@open-wc/testing';
 import { html } from 'lit/static-html.js';
-import { LitSwitch } from '../lit-switch.js';
+import { LitSwitchDos } from '../lit-switch-dos.js';
 
-suite('lit-switch', () => {
+suite('lit-switch-dos', () => {
   test('is defined', () => {
-    const el = document.createElement('lit-switch');
-    assert.instanceOf(el, LitSwitch);
+    const el = document.createElement('lit-switch-dos');
+    assert.instanceOf(el, LitSwitchDos);
   });
 
   test('renders with default values', async () => {
-    const el = await fixture(html`<lit-switch></lit-switch>`);
+    const el = await fixture(html`<lit-switch-dos></lit-switch-dos>`);
     assert.shadowDom.equal(
       el,
       `
@@ -27,7 +27,7 @@ suite('lit-switch', () => {
   });
 
   test('renders with a set name', async () => {
-    const el = await fixture(html`<lit-switch name="Test"></lit-switch>`);
+    const el = await fixture(html`<lit-switch-dos name="Test"></lit-switch-dos>`);
     assert.shadowDom.equal(
       el,
       `
@@ -39,7 +39,7 @@ suite('lit-switch', () => {
   });
 
   test('handles a click', async () => {
-    const el = await fixture(html`<lit-switch></lit-switch>`);
+    const el = await fixture(html`<lit-switch-dos></lit-switch-dos>`);
     const button = el.shadowRoot.querySelector('button');
     button.click();
     await el.updateComplete;
@@ -54,7 +54,7 @@ suite('lit-switch', () => {
   });
 
   test('styling applied', async () => {
-    const el = await fixture(html`<lit-switch></lit-switch>`);
+    const el = await fixture(html`<lit-switch-dos></lit-switch-dos>`);
     await el.updateComplete;
     assert.equal(getComputedStyle(el).paddingTop, '16px');
   });

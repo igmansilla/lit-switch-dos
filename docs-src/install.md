@@ -1,16 +1,16 @@
 ---
 layout: page.11ty.cjs
-title: <lit-switch> ⌲ Install
+title: <lit-switch-dos> ⌲ Install
 ---
 
 # Install
 
-`<lit-switch>` is distributed on npm, so you can install it locally or use it via npm CDNs like unpkg.com.
+`<lit-switch-dos>` is distributed on npm, so you can install it locally or use it via npm CDNs like unpkg.com.
 
 ## Local Installation
 
 ```bash
-npm i lit-switch
+npm i lit-switch-dos
 ```
 
 ## CDN
@@ -22,11 +22,11 @@ For this element to work from unpkg.com specifically, you need to include the `?
 ### HTML
 
 ```html
-<script type="module" src="https://unpkg.com/lit-switch?module"></script>
+<script type="module" src="https://unpkg.com/lit-switch-dos?module"></script>
 ```
 
 ### JavaScript
 
 ```html
-import {LitSwitch} from 'https://unpkg.com/lit-switch?module';
+import {LitSwitchDos} from 'https://unpkg.com/lit-switch-dos?module';
 ```

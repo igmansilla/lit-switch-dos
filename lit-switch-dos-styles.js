@@ -1,6 +1,6 @@
 import { css } from "lit";
 
-export const litSwitchDosStyles = css`
+export const LitSwitchDosStyles = css`
  :host {
     --color__red--100: #ff8da3;
     --color__red--200: #fe718e;
